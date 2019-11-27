@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="619.0" prefWidth="1047.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="luces.FXMLDocumentController">
+   <children>
+      <Pane fx:id="panel5" disable="true" layoutX="678.0" layoutY="86.0" onMouseClicked="#handlelightGrottoPn" prefHeight="193.0" prefWidth="136.0" style="-fx-background-color: #E0E0E0;">
+         <children>
+            <ImageView fx:id="imgLightGrotto" fitHeight="63.0" fitWidth="100.0" layoutX="43.0" layoutY="34.0" nodeOrientation="RIGHT_TO_LEFT" opacity="0.2" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/img/luz.png" />
+               </image>
+            </ImageView>
+            <JFXToggleButton fx:id="tggLightGrotto" layoutX="3.0" layoutY="135.0" onAction="#handlelightGrotto" prefHeight="58.0" prefWidth="130.0" text="Gruta" textAlignment="CENTER" toggleColor="#8bc34a" toggleLineColor="#c5dda8" unToggleColor="#fb3d00" unToggleLineColor="#eea198" />
+         </children>
+      </Pane>
+      <Pane fx:id="panel4" disable="true" layoutX="525.0" layoutY="86.0" onMouseClicked="#handlelightPotPn" prefHeight="193.0" prefWidth="136.0" style="-fx-background-color: #E0E0E0;">
+         <children>
+            <ImageView fx:id="imgLightPot" fitHeight="63.0" fitWidth="100.0" layoutX="43.0" layoutY="34.0" nodeOrientation="RIGHT_TO_LEFT" opacity="0.2" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/img/extra.png" />
+               </image>
+            </ImageView>
+            <JFXToggleButton fx:id="tggLightPot" layoutX="3.0" layoutY="135.0" onAction="#handlelightPot" prefHeight="58.0" prefWidth="130.0" text="Potente" textAlignment="CENTER" toggleColor="#8bc34a" toggleLineColor="#c5dda8" unToggleColor="#fb3d00" unToggleLineColor="#eea198" />
+         </children>
+      </Pane>
+      <Pane fx:id="panel3" disable="true" layoutX="337.0" layoutY="87.0" onMouseClicked="#handlelightFocusPn" prefHeight="193.0" prefWidth="136.0" style="-fx-background-color: #E0E0E0;">
+         <children>
+            <ImageView fx:id="imgLightFocus" fitHeight="63.0" fitWidth="100.0" layoutX="43.0" layoutY="34.0" nodeOrientation="RIGHT_TO_LEFT" opacity="0.2" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/img/foco.png" />
+               </image>
+            </ImageView>
+            <JFXToggleButton fx:id="tggLightFocus" layoutX="3.0" layoutY="135.0" onAction="#handlelightFocus" prefHeight="58.0" prefWidth="130.0" text="Focos" textAlignment="CENTER" toggleColor="#8bc34a" toggleLineColor="#c5dda8" unToggleColor="#fb3d00" unToggleLineColor="#eea198" />
+         </children>
+      </Pane>
+      <Pane fx:id="panel2" disable="true" layoutX="171.0" layoutY="87.0" onMouseClicked="#handlelightTwoPn" prefHeight="193.0" prefWidth="136.0" style="-fx-background-color: #E0E0E0;">
+         <children>
+            <ImageView fx:id="imgLightTwo" fitHeight="100.0" fitWidth="100.0" layoutX="28.0" layoutY="14.0" nodeOrientation="RIGHT_TO_LEFT" opacity="0.2" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/img/left.png" />
+               </image>
+            </ImageView>
+            <JFXToggleButton fx:id="tggLightTwo" layoutX="-4.0" layoutY="133.0" onAction="#handlelightTwo" prefHeight="58.0" prefWidth="130.0" text="Reflector" textAlignment="CENTER" toggleColor="#8bc34a" toggleLineColor="#c5dda8" unToggleColor="#fb3d00" unToggleLineColor="#eea198" />
+         </children>
+      </Pane>
+      <JFXButton fx:id="btnOnAll" disable="true" layoutX="873.0" layoutY="60.0" onAction="#onAll" prefHeight="43.0" prefWidth="136.0" ripplerFill="WHITE" style="-fx-background-color: #8bc34a;" text="Encender todo" textFill="WHITE" />
+      <Pane fx:id="panel1" disable="true" layoutX="29.0" layoutY="87.0" onMouseClicked="#handlelightOnePn" prefHeight="193.0" prefWidth="136.0" style="-fx-background-color: #E0E0E0;">
+         <children>
+            <ImageView fx:id="imgLightOne" blendMode="MULTIPLY" cacheHint="SCALE" fitHeight="100.0" fitWidth="100.0" layoutX="27.0" layoutY="14.0" opacity="0.2" preserveRatio="true">
+               <image>
+                  <Image url="@/img/left.png" />
+               </image>
+            </ImageView>
+            <JFXToggleButton fx:id="tggLightOne" layoutX="3.0" layoutY="129.0" onAction="#handlelightOne" prefHeight="58.0" prefWidth="130.0" text="Reflector" textAlignment="CENTER" toggleColor="#8bc34a" toggleLineColor="#c5dda8" unToggleColor="#fb3d00" unToggleLineColor="#eea198" />
+         </children>
+      </Pane>
+      <JFXButton fx:id="btnOffAll" disable="true" layoutX="873.0" layoutY="109.0" onAction="#offAll" prefHeight="43.0" prefWidth="136.0" style="-fx-background-color: fb3d00;" text="Apagar todo" textFill="WHITE" />
+      <JFXButton fx:id="btnReflector" disable="true" layoutX="32.0" layoutY="294.0" onAction="#handleReflector" prefHeight="36.0" prefWidth="273.0" ripplerFill="WHITE" text="Encender" textFill="WHITE" />
+      <JFXComboBox fx:id="cmbCom" labelFloat="true" layoutX="886.0" layoutY="193.0" prefHeight="25.0" prefWidth="110.0" promptText="Puerto COM" />
+      <JFXButton fx:id="btnConect" layoutX="901.0" layoutY="229.0" onAction="#handleConect" prefHeight="36.0" prefWidth="81.0" ripplerFill="WHITE" style="-fx-background-color: #2099FF;" text="Conectar" textFill="WHITE" />
+      <Label fx:id="conection" alignment="TOP_RIGHT" layoutX="887.0" layoutY="24.0" prefHeight="25.0" prefWidth="143.0" text="Sin conexión">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Pane fx:id="panel9" disable="true" layoutX="874.0" layoutY="396.0" onMouseClicked="#handlelightExtra4Pn" prefHeight="193.0" prefWidth="136.0" style="-fx-background-color: #E0E0E0;">
+         <children>
+            <ImageView fx:id="imgLightExtra4" fitHeight="63.0" fitWidth="100.0" layoutX="43.0" layoutY="34.0" nodeOrientation="RIGHT_TO_LEFT" opacity="0.2" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/img/luz.png" />
+               </image>
+            </ImageView>
+            <JFXToggleButton fx:id="tggLightExtra4" layoutX="3.0" layoutY="135.0" onAction="#handlelightExtra4" prefHeight="58.0" prefWidth="130.0" text="Extra 4" textAlignment="CENTER" toggleColor="#8bc34a" toggleLineColor="#c5dda8" unToggleColor="#fb3d00" unToggleLineColor="#eea198" />
+         </children>
+      </Pane>
+      <Pane fx:id="panel8" disable="true" layoutX="718.0" layoutY="396.0" onMouseClicked="#handlelightExtra3Pn" prefHeight="193.0" prefWidth="136.0" style="-fx-background-color: #E0E0E0;">
+         <children>
+            <ImageView fx:id="imgLightExtra3" fitHeight="63.0" fitWidth="100.0" layoutX="43.0" layoutY="34.0" nodeOrientation="RIGHT_TO_LEFT" opacity="0.2" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/img/luz.png" />
+               </image>
+            </ImageView>
+            <JFXToggleButton fx:id="tggLightExtra3" layoutX="3.0" layoutY="135.0" onAction="#handlelightExtra3" prefHeight="58.0" prefWidth="130.0" text="Extra 3" textAlignment="CENTER" toggleColor="#8bc34a" toggleLineColor="#c5dda8" unToggleColor="#fb3d00" unToggleLineColor="#eea198" />
+         </children>
+      </Pane>
+      <Pane fx:id="panel6" disable="true" layoutX="405.0" layoutY="396.0" onMouseClicked="#handlelightExtra1Pn" prefHeight="193.0" prefWidth="136.0" style="-fx-background-color: #E0E0E0;">
+         <children>
+            <ImageView fx:id="imgLightExtra1" fitHeight="63.0" fitWidth="100.0" layoutX="43.0" layoutY="34.0" nodeOrientation="RIGHT_TO_LEFT" opacity="0.2" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/img/luz.png" />
+               </image>
+            </ImageView>
+            <JFXToggleButton fx:id="tggLightExtra1" layoutX="3.0" layoutY="135.0" onAction="#handlelightExtra1" prefHeight="58.0" prefWidth="130.0" text="Extra 1" textAlignment="CENTER" toggleColor="#8bc34a" toggleLineColor="#c5dda8" unToggleColor="#fb3d00" unToggleLineColor="#eea198" />
+         </children>
+      </Pane>
+      <Pane fx:id="panel7" disable="true" layoutX="561.0" layoutY="396.0" onMouseClicked="#handlelightExtra2Pn" prefHeight="193.0" prefWidth="136.0" style="-fx-background-color: #E0E0E0;">
+         <children>
+            <ImageView fx:id="imgLightExtra2" fitHeight="63.0" fitWidth="100.0" layoutX="43.0" layoutY="34.0" nodeOrientation="RIGHT_TO_LEFT" opacity="0.2" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/img/luz.png" />
+               </image>
+            </ImageView>
+            <JFXToggleButton fx:id="tggLightExtra2" layoutX="3.0" layoutY="135.0" onAction="#handlelightExtra2" prefHeight="58.0" prefWidth="130.0" text="Extra 2" textAlignment="CENTER" toggleColor="#8bc34a" toggleLineColor="#c5dda8" unToggleColor="#fb3d00" unToggleLineColor="#eea198" />
+         </children>
+      </Pane>
+      <JFXToggleButton fx:id="tggTurn" disable="true" layoutX="76.0" layoutY="377.0" onAction="#handleTurn" prefHeight="78.0" prefWidth="190.0" style="-fx-background-color: #2196F3;" text="Interruptor" textFill="WHITE" toggleColor="#8bc34a" toggleLineColor="#c5dda8" unToggleColor="#fb3d00" unToggleLineColor="#eea198">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXToggleButton>
+      <JFXToggleButton fx:id="tggCorte1" disable="true" layoutX="29.0" layoutY="20.0" prefHeight="58.0" prefWidth="136.0" style="-fx-background-color: #E0E0E0;" text="Corte" />
+      <JFXToggleButton fx:id="tggCorte2" disable="true" layoutX="171.0" layoutY="20.0" prefHeight="58.0" prefWidth="136.0" style="-fx-background-color: #E0E0E0;" text="Corte" />
+      <JFXToggleButton fx:id="tggCorte3" disable="true" layoutX="337.0" layoutY="20.0" prefHeight="58.0" prefWidth="136.0" style="-fx-background-color: #E0E0E0;" text="Corte" />
+      <JFXToggleButton fx:id="tggCorte4" disable="true" layoutX="525.0" layoutY="20.0" prefHeight="58.0" prefWidth="136.0" style="-fx-background-color: #E0E0E0;" text="Corte" />
+      <JFXToggleButton fx:id="tggCorte5" disable="true" layoutX="678.0" layoutY="20.0" prefHeight="58.0" prefWidth="136.0" style="-fx-background-color: #E0E0E0;" text="Corte" />
+      <JFXToggleButton fx:id="tggCorte6" disable="true" layoutX="405.0" layoutY="330.0" prefHeight="58.0" prefWidth="136.0" style="-fx-background-color: #E0E0E0;" text="Corte" />
+      <JFXToggleButton fx:id="tggCorte7" disable="true" layoutX="561.0" layoutY="330.0" prefHeight="58.0" prefWidth="136.0" style="-fx-background-color: #E0E0E0;" text="Corte" />
+      <JFXToggleButton fx:id="tggCorte8" disable="true" layoutX="718.0" layoutY="330.0" prefHeight="58.0" prefWidth="136.0" style="-fx-background-color: #E0E0E0;" text="Corte" />
+      <JFXToggleButton fx:id="tggCorte9" disable="true" layoutX="873.0" layoutY="330.0" prefHeight="58.0" prefWidth="136.0" style="-fx-background-color: #E0E0E0;" text="Corte" />
+      <JFXToggleButton fx:id="tggCorte" disable="true" layoutX="76.0" layoutY="469.0" prefHeight="78.0" prefWidth="190.0" style="-fx-background-color: #BF77E6;" text="Corte" textFill="WHITE" toggleColor="#8bc34a" toggleLineColor="#c5dda8" unToggleColor="#fb3d00" unToggleLineColor="#eea198">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXToggleButton>
+   </children>
+</AnchorPane>
